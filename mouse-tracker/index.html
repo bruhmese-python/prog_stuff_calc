@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Mouse Position with Server Tracking</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        canvas {
+            display: block;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas"></canvas>
+
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Resize the canvas to fill the screen
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        resizeCanvas();
+
+        let isMouseDown = false;
+        const innerCircleSize = 40;
+        const outerCircleSize = innerCircleSize * 1.3;
+
+        function drawCursor(x, y) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            ctx.beginPath();
+            ctx.arc(x, y, outerCircleSize, 0, Math.PI * 2);
+            ctx.fillStyle = "rgba(255, 0, 0, 0.3)";
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.arc(x, y, innerCircleSize, 0, Math.PI * 2);
+            ctx.fillStyle = "red";
+            ctx.fill();
+        }
+
+        // Send mouse position to the server using fetch (AJAX)
+        function sendMousePosition(x, y) {
+            fetch('/track-mouse', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ x, y })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Server response:', data);
+            })
+            .catch(error => {
+                console.error('Error sending mouse position:', error);
+            });
+        }
+
+        // Mouse move event (desktop)
+        canvas.addEventListener('mousemove', (e) => {
+            const mouseX = e.offsetX;
+            const mouseY = e.offsetY;
+            
+            if (isMouseDown) {
+                console.log(`Dragging: X = ${mouseX}, Y = ${mouseY}`);
+            }
+
+            drawCursor(mouseX, mouseY);
+            sendMousePosition(mouseX, mouseY); // Send position to the server
+        });
+
+        // Mouse down event (desktop)
+        canvas.addEventListener('mousedown', (e) => {
+            isMouseDown = true;
+            const mouseX = e.offsetX;
+            const mouseY = e.offsetY;
+            drawCursor(mouseX, mouseY);
+            sendMousePosition(mouseX, mouseY);
+        });
+
+        // Mouse up event (desktop)
+        canvas.addEventListener('mouseup', (e) => {
+            isMouseDown = false;
+            const mouseX = e.offsetX;
+            const mouseY = e.offsetY;
+            drawCursor(mouseX, mouseY);
+            sendMousePosition(mouseX, mouseY);
+        });
+
+        // Prevent the default behavior for touch events (like page swipe) on mobile
+        canvas.addEventListener('touchstart', (e) => {
+            e.preventDefault();  // Prevent page reload on touch
+            isMouseDown = true;
+            const touch = e.touches[0];
+            const mouseX = touch.clientX;
+            const mouseY = touch.clientY;
+            drawCursor(mouseX, mouseY);
+            sendMousePosition(mouseX, mouseY);
+        });
+
+        canvas.addEventListener('touchmove', (e) => {
+            e.preventDefault();  // Prevent default touch behavior (like scrolling)
+            const touch = e.touches[0];
+            const mouseX = touch.clientX;
+            const mouseY = touch.clientY;
+
+            if (isMouseDown) {
+                console.log(`Dragging: X = ${mouseX}, Y = ${mouseY}`);
+            }
+
+            drawCursor(mouseX, mouseY);
+            sendMousePosition(mouseX, mouseY);
+        });
+
+        canvas.addEventListener('touchend', (e) => {
+            e.preventDefault();
+            isMouseDown = false;
+            const touch = e.changedTouches[0];
+            const mouseX = touch.clientX;
+            const mouseY = touch.clientY;
+            drawCursor(mouseX, mouseY);
+            sendMousePosition(mouseX, mouseY);
+        });
+
+        window.addEventListener('resize', resizeCanvas);
+    </script>
+</body>
+</html>

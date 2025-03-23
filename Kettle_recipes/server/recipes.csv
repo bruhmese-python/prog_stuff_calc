@@ -1,0 +1,50 @@
+"Recipes","Action","Bowl","Time"
+"Egg Custard","Egg Custard",,
+"Momos","Whisk 2 eggs",1,5
+"Chinese steamed eggs","Milk,sugar, custard pwder",2,
+"Banana pancakes","Steam + whisk",2,2
+,"Add 2",1,0
+,"Whisk",1,10
+,"Strain",1,2
+,"Steam",2,20
+,"Cool",2,60
+,"Serve",,
+,"Momos",,
+,"//Filling",,
+,"Chop onions",1,10
+,"Fry till golden brown",1,10
+,"Chop veggies",2,1
+,"Add 2",,10
+,"Masalas / soy sauce",,
+,"//Dumplings",,
+,"Flatten dough with mug",2,
+,"Coat in thin layer of flour",2,
+,"Stuff Filling",2,
+,"Shape as desired",2,
+,"Repeat",2,
+,"Move to steam rack",2,
+,"Steam",,30
+,"Set",,10
+,"Serve",,
+,"Chinese steamed eggs",,
+,"Whisk 2 eggs",1,2
+,"little water",1,
+,"salt",1,
+,"maybe masala",1,
+,"Steam",1,20
+,"Cut",1,
+,"Set",1,
+,"Soy sauce",1,
+,"Serve",,
+,"Banana pancakes",,
+,"Mash Bananas",1,5
+,"2 Eggs",1,
+,"Milk",1,
+,"sugar",1,
+,"little by little maida",1,
+,"//Cooking",,
+,"Pour in light oil/butter ",,10
+,"High flame each side",,
+,"Repeat",,
+,"Jam/butter/honey",,
+,"Serve",,
