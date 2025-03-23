@@ -1,10 +1,11 @@
 "Recipes","Action","Bowl","Time"
 "Egg Custard","Egg Custard",,
 "Momos","Whisk 2 eggs",1,5
-"Chinese steamed eggs","Milk,sugar, custard pwder",2,
-"Banana pancakes","Steam + whisk",2,2
-,"Add 2",1,0
-,"Whisk",1,10
+"Chinese steamed eggs","Milk,sugar",2,
+"Banana pancakes","Custard powder",2,
+"Korean Soy Eggs","Steam + whisk",2,2
+"Bread Halwa","Add 2",1,0
+"Egg Fried Rice","Whisk",1,10
 ,"Strain",1,2
 ,"Steam",2,20
 ,"Cool",2,60
@@ -47,4 +48,45 @@
 ,"High flame each side",,
 ,"Repeat",,
 ,"Jam/butter/honey",,
+,"Serve",,
+,"Korean Soy Eggs",,
+,"Boil eggs",1,
+,"Cut eggs in half",1,
+,"Repeat",1,
+,"Soy sauce",1,
+,"Honey",1,
+,"Pepper or spices",1,
+,"Marinate overnight",1,
+,"Serve",,
+,"Bread Halwa",,
+,"Roast/Fry peanuts / raisins in ghee",,1
+,"Set aside",2,
+,"Crumble 3-4 bread slices",1,15
+,"Fry in ghee till brown",1,7
+,"Set aside",1,
+,"½ cup sugar",,
+,"1 ¼ cup water",,
+,"Heat till brown",,4
+,"Cardamom",,2
+,"Add 1",,
+,"Cook till halwa consistency",,5
+,"Set aside",1,
+,"Add and top with 2",1,
+,"Serve",,
+,"Egg Fried rice",,
+,"Slice onions & tomatoes",1,5
+,"Make scrambled eggs",,5
+,"Set aside",2,
+,"Add oil & onions",,
+,"Fry till golden brown",,5
+,"Add tomatoes",,
+,"Cook till juices out",,
+,"Add condiments",,
+,"Stir ",,0.5
+,"Add veggies (opt.)",,2
+,"Add rice",,2
+,"Add 2",,2
+,"Add soy sauce",,0.5
+,"Add butter",,0.5
+,"Warm",,2
 ,"Serve",,
