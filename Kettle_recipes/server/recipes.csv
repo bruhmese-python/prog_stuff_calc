@@ -6,10 +6,10 @@
 "Korean Soy Eggs","Steam + whisk",2,2
 "Bread Halwa","Add 2",1,0
 "Egg Fried Rice","Whisk",1,10
-,"Strain",1,2
+"Chicken_glazed","Strain",1,2
 ,"Steam",2,20
 ,"Cool",2,60
-,"Serve",,
+,"Serve","Chicken_glazed",
 ,"Momos",,
 ,"//Filling",,
 ,"Chop onions",1,10
@@ -89,4 +89,16 @@
 ,"Add soy sauce",,0.5
 ,"Add butter",,0.5
 ,"Warm",,2
+,"Serve",,
+,"Chicken glazed",,
+,"Slice onions & tomatoes",5,1
+,"Mince  2 garlic cloves",2,1
+,"Season chicken ",4,2
+,"Oil, Onion",10,
+,"Garlic",5,
+,"Tomato",5,
+,"Sugar,chilli, soy-sauce till thick",,
+,"Water ¼ cup ",1,
+,"Chicken Drumsticks",25,
+,"Butter topping",,
 ,"Serve",,
