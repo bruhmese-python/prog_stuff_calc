@@ -1,12 +1,12 @@
 "Recipes","Action","Bowl","Time"
-"Egg Custard","Egg Custard",,
-"Momos","Whisk 2 eggs",1,5
-"Chinese steamed eggs","Milk,sugar",2,
-"Banana pancakes","Custard powder",2,
-"Korean Soy Eggs","Steam + whisk",2,2
-"Bread Halwa","Add 2",1,0
-"Egg Fried Rice","Whisk",1,10
-"Chicken glazed","Strain",1,2
+"Banana pancakes","Egg Custard",,
+"Bread Halwa","Whisk 2 eggs",1,5
+"Chicken glazed","Milk,sugar",2,
+"Chinese steamed eggs","Custard powder",2,
+"Egg Custard","Steam + whisk",2,2
+"Egg Fried Rice","Add 2",1,0
+"Korean Soy Eggs","Whisk",1,10
+"Momos","Strain",1,2
 ,"Steam",2,20
 ,"Cool",2,60
 ,"Serve",,
