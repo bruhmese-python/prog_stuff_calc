@@ -7,7 +7,7 @@
 "Egg Fried Rice","Add 2",1,0
 "Korean Soy Eggs","Whisk",1,10
 "Momos","Strain",1,2
-,"Steam",2,20
+"Rohu fish curry","Steam",2,20
 ,"Cool",2,60
 ,"Serve",,
 ,"Momos",,
@@ -94,13 +94,27 @@
 ,"Slice onions & crush tomatoes",1,5
 ,"Mince  2 garlic cloves",1,2
 ,"Season chicken ",2,4
-,"Add Oil, Onion",,10
+,"Add Oil, Onion | golden brown",,10
 ,"Add Garlic",,5
-,"Tomato",,5
+,"Add Tomato | till break",,5
 ,"Sugar,chilli, soy-sauce till thick",,
 ,"//Cooking",,
 ,"Water ¼ cup till simmer",,1
 ,"Cook Chicken Drumsticks",,25
 ,"Repeat",,
 ,"Butter Topping",,
+,"Serve",,
+,"Rohu fish curry",,
+,"Marinate 🐟️ with salt,turmeric & lemon",1,15
+,"Mince 2 garlic cloves (& ginger)",2,3
+,"Chop Chilies",,
+,"Slice onions, puree 2 tomatoes ",2,5
+,"Oil",,0.25
+,"Add Onions | golden brown",,5
+,"Add Garlic,Ginger",,1
+,"Add Tomatoes | till break",,
+,"Salt + sugat",,
+,"Add Fish | low heat",,10
+,"Add water | simmer",,5
+,"Garnish ",,
 ,"Serve",,
