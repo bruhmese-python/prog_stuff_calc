@@ -9,7 +9,7 @@
 "Chicken glazed","Strain",1,2
 ,"Steam",2,20
 ,"Cool",2,60
-,"Serve","Chicken_glazed",
+,"Serve",,
 ,"Momos",,
 ,"//Filling",,
 ,"Chop onions",1,10
@@ -87,18 +87,20 @@
 ,"Add rice",,2
 ,"Add 2",,2
 ,"Add soy sauce",,0.5
-,"Add butter",,0.5
+,"Add butter/sesame oil",,0.5
 ,"Warm",,2
 ,"Serve",,
 ,"Chicken glazed",,
-,"Slice onions & tomatoes",1,5
+,"Slice onions & crush tomatoes",1,5
 ,"Mince  2 garlic cloves",1,2
 ,"Season chicken ",2,4
-,"Oil, Onion",,10
-,"Garlic",,5
+,"Add Oil, Onion",,10
+,"Add Garlic",,5
 ,"Tomato",,5
 ,"Sugar,chilli, soy-sauce till thick",,
-,"Water ¼ cup ",,1
-,"Chicken Drumsticks",,25
-,"Butter topping",,
+,"//Cooking",,
+,"Water ¼ cup till simmer",,1
+,"Cook Chicken Drumsticks",,25
+,"Repeat",,
+,"Butter Topping",,
 ,"Serve",,
